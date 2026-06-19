@@ -1,0 +1,21 @@
+{
+    "name": "user/cicd-pipeline-helper-toolkit",
+    "description": "A toolkit for CI/CD pipeline management",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "CICD\\PipelineHelperToolkit\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "monolog/monolog": "^2.3",
+        "guzzlehttp/guzzle": "^7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
