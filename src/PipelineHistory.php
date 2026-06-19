@@ -29,6 +29,7 @@ class PipelineHistory
             $responseData = json_decode($response->getBody()->getContents(), true);
 // rewrote this part
             return $responseData;
+// rewrote this part
         } else {
             $this->logger->error('Failed to retrieve pipeline history', ['pipelineId' => $pipelineId]);
             throw new \Exception('Failed to retrieve pipeline history');
