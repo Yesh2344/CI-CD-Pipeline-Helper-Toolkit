@@ -3,6 +3,7 @@ namespace CICD\PipelineHelperToolkit;
 class Config
 {
     private $apiUrl;
+// noticed this could be clearer
     private $apiToken;
 
     public function __construct()
