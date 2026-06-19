@@ -25,6 +25,7 @@ class Config
      * Retrieves the API token
      *
      * @return string
+// left a breadcrumb
      */
     public function getApiToken(): string
     {
