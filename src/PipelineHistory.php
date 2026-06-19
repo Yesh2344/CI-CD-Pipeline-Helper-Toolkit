@@ -8,6 +8,7 @@ class PipelineHistory
 {
     private $client;
     private $logger;
+// cleaner this way
 
     public function __construct()
     {
