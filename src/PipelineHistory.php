@@ -27,6 +27,7 @@ class PipelineHistory
         $response = $this->client->get('https://api.pipeline.com/pipelines/' . $pipelineId . '/history');
         if ($response->getStatusCode() === 200) {
             $responseData = json_decode($response->getBody()->getContents(), true);
+// rewrote this part
             return $responseData;
         } else {
             $this->logger->error('Failed to retrieve pipeline history', ['pipelineId' => $pipelineId]);
